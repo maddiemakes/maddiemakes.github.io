@@ -8,11 +8,26 @@
         
         <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Open+Sans" rel="stylesheet">
         
+        
+<!--     Smooth link scrolling -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.localScroll.js"></script>
+    <script src="/js/jquery.scrollTo.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#titlename').localScroll({
+                duration: 800,
+                offset: -60
+            });
+        });
+    </script>
+        
     </head>
 
     <body>
+        <a id="topOfPage"></a>
         <div id="titlename" class="topbar">
-            <h1>Jordan Wells</h1>
+            <a href="#topOfPage"><h1>Jordan Wells</h1></a>
             <div id="titledescription">
                 <h4>Programmer | Musician | Student</h4>
             </div>
@@ -25,10 +40,9 @@
                 <p>I've grown up playing video games and they're a big hobby of mine. I have over 200 games in my Steam library and my favorite games are probably <a href="https://en.wikipedia.org/wiki/Heavy_Rain">Heavy Rain</a> and <a href="https://en.wikipedia.org/wiki/Life_Is_Strange">Life is Strange</a>. The game you're most likely to see me playing right now is Blizzard's <a href="https://playoverwatch.com/en-us/">Overwatch</a>.</p>
                 
                 <div class="img-div">
-                    <img src="img/graphicsCard.jpg">
+                    <img src="img/graphicsCard.jpg"/>
                     <div class="txt-div">
                         <p>My graphics card installed in my desktop</p>
-<!--                        <p>MY GRAPHICS CARD INSTALLED IN MY DESKTOP</p>-->
                     </div>
                 </div>
                 
@@ -107,7 +121,7 @@
                 <p>If I'm not doing one of the hobbies listed above I'm probably just hanging out with my friends and trying to have a good time.</p>
                 <img src="img/professional.jpg"/>
                 <p>Contact me here</p>
-                <p>jwells.me@gmail.com</p>
+                <a href="mailto:jwells.me@gmail.com">jwells.me@gmail.com</a>
             </div>
         </div>
     </body>

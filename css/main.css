@@ -95,6 +95,8 @@ h1 {
     width: 100%;
     margin-top: 4px;
     -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
 
@@ -107,6 +109,8 @@ h1 {
     bottom: 0;
     z-index: 1;
     -webkit-transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -o-transition: all 0.5s ease 0s;
     transition: all 0.5s ease 0s;
 }
 
@@ -142,7 +146,12 @@ h1 {
     margin: 5%;
 }
 
+#misc p, #misc img, #misc a {
+    position: relative;
+    display: inline-block;
+}
+
 #misc img {
-    margin: 3% 15% 0% 15%;
-    width: 70%;
+    border-radius: 50%; 
+    width: 30%;
 }
