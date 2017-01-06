@@ -54,7 +54,8 @@ function annoy() {
     isAnnoy = (isAnnoy + 1)%5;
     switch (isAnnoy) {
         case 4:
-            h1elem.innerHTML = "<embed src=\"http://www.sheepproductions.com/billy/billy.swf?autoplay=true&f0=john.mp3&t0=jOHn c3NA&total=1\" quality=\"high\" wmode=\"transparent\" width=\"200\" height=\"10\" name=\"billy\" align=\"middle\" type=\"application/x-shockwave-flash\" /> H&#x1f3ba;W tO   J&#x1f3ba;hN CENA &#x1f3ba;";
+            h1elem.innerHTML = "<embed src=\"http://www.sheepproductions.com/billy/billy.swf?autoplay=true&f0=http://jwellstech.github.com/2015/webDevFinal/john.mp3&t0=J0Hn c3NA&total=1\" quality=\"high\" wmode=\"transparent\" width=\"200\" height=\"10\" name=\"billy\" align=\"middle\" type=\"application/x-shockwave-flash\" /> H&#x1f3ba;W tO   J&#x1f3ba;hN CENA &#x1f3ba;";
+//                "<embed src=\"http://www.sheepproductions.com/billy/billy.swf?autoplay=true&f0=/john.mp3&t0=jOHn c3NA&total=1\" quality=\"high\" wmode=\"transparent\" width=\"200\" height=\"10\" name=\"billy\" align=\"middle\" type=\"application/x-shockwave-flash\" /> H&#x1f3ba;W tO   J&#x1f3ba;hN CENA &#x1f3ba;";
             h2elem2.innerHTML = "EX&#x1f3ba;MPLES &#x1f3ba;F wh@t 2 av&#x1f3ba;1D:";
             h2elem3.innerHTML = "WH&#x1f3ba; 2 P1L3 DR1V3";
             h2elem4.innerHTML = "WhY tHey SUcK";

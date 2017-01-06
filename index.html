@@ -15,7 +15,7 @@
     <script src="/js/jquery.scrollTo.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $('#titlename').localScroll({
+            $('.linkScroll').localScroll({
                 duration: 800,
                 offset: -60
             });
@@ -26,122 +26,142 @@
 
     <body>
         <a id="topOfPage"></a>
-        <div id="titlename" class="topbar">
-            <a href="#topOfPage"><h1>Jordan Wells</h1></a>
-            <div id="titledescription">
-                <h4>Programmer | Musician | Student</h4>
-            </div>
-        </div>
         
-        <div id="page">
-            <div id="hardware" class="post">
-                <h2>Computers</h2>
-                <p>I've spent my entire life dealing with computers from hardware to software. I have a large interest in building hardware and have put together about 7 desktop computers now, including my own.</p>
-                <p>I've grown up playing video games and they're a big hobby of mine. I have over 200 games in my Steam library and my favorite games are probably <a href="https://en.wikipedia.org/wiki/Heavy_Rain">Heavy Rain</a> and <a href="https://en.wikipedia.org/wiki/Life_Is_Strange">Life is Strange</a>. The game you're most likely to see me playing right now is Blizzard's <a href="https://playoverwatch.com/en-us/">Overwatch</a>.</p>
-                
-                <div class="img-div">
-                    <img src="img/graphicsCard.jpg"/>
-                    <div class="txt-div">
-                        <p>My graphics card installed in my desktop</p>
-                    </div>
-                </div>
-                
-                <p>Aside from just playing video games I also love programming and have written some games/programs with friends and peers. The two publicly available programs I'm most proud of are <a href="http://github.com/jwellstech/zombiegame">Zombiegame</a> and <a href="http://github.com/jwellstech/boggle">Boggle</a>.</p>
-                <p>Programming is not just a career or work for me, but also a hobby. I've written countless amounts of code just for personal use or even for fun. You can find my personal github <a href="http://github.com/jwellstech">here</a>.</p>
-                
-                <br>
-                
-                <div id="centeredlist">
-                    <h4 style="margin-bottom: -10px; text-align: center;">I'm proficient in a few coding languages, listed below.</h4>
-                    <ul>
-                        <li>Java</li>
-                        <li>C</li>
-                        <li>Python</li>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Javascript</li>
-                    </ul>
+        <ul class="navigation">
+            <a href="#"><li class="nav-item nav-head">Home</li></a>
+            <li class="nav-item nav-head">About Me</li>
+<!--            <a href="experience.html"><li class="nav-item">Experience</li></a>-->
+            <a href="education.html"><li class="nav-item">Education</li></a>
+<!--            <a href="contact.html"><li class="nav-item">Contact Me</li></a>-->
+<!--            <a href="#"><li class="nav-item">Resume</li></a>-->
+            <li class="nav-item nav-head">2015</li>
+            <a href="2015/webDevFinal/index.html"><li class="nav-item">Web Dev Final</li></a>
+<!--            <li class="nav-item nav-head">2014</li>-->
+<!--            <a href="#"><li class="nav-item nav-sub"></li></a>-->
+        </ul>
+        
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
+        
+<!-- The website is wrapped in this div because of the navigation bar -->
+        <div class="site-wrap">
+        
+            <div id="titlename" class="topbar linkScroll">
+                <a href="#topOfPage"><h1>Jordan Wells</h1></a>
+                <div id="titledescription">
+                    <h4>Programmer | Musician | Student</h4>
                 </div>
             </div>
-            
-            <div id="music" class="post">
-                <h2>Music</h2>
-                <p>Music really envelopes my life. I've been a pianist since I was in the 2nd grade and often play as a good way to relax. No matter what I'm doing, you can usually find me with something playing in the background.</p>
+        
+            <div id="page">
+                <div id="hardware" class="post">
+                    <h2>Computers</h2>
+                    <p>I've spent my entire life dealing with computers from hardware to software. I have a large interest in building hardware and have put together about 7 desktop computers now, including my own.</p>
+                    <p>I've grown up playing video games and they're a big hobby of mine. I have over 200 games in my Steam library and my favorite games are probably <a href="https://en.wikipedia.org/wiki/Heavy_Rain">Heavy Rain</a> and <a href="https://en.wikipedia.org/wiki/Life_Is_Strange">Life is Strange</a>. The game you're most likely to see me playing right now is Blizzard's <a href="https://playoverwatch.com/en-us/">Overwatch</a>.</p>
                 
-                <div class="img-div">
-                    <img alt="My headphones of choice, the AKG K7XXs" src="img/headphones.jpg"/>
-                    <div class="txt-div">
-                        <p>My headphones of choice, the AKG K7XXs</p>
-<!--                        <p>MY HEADPHONES OF CHOICE, THE AKG K7XXS</p>-->
+                    <div class="img-div">
+                        <img src="img/graphicsCard.jpg"/>
+                        <div class="txt-div">
+                            <p>My graphics card installed in my desktop</p>
+                        </div>
+                    </div>
+                
+                    <p>Aside from just playing video games I also love programming and have written some games/programs with friends and peers. The two publicly available programs I'm most proud of are <a href="http://github.com/jwellstech/zombiegame">Zombiegame</a> and <a href="http://github.com/jwellstech/boggle">Boggle</a>.</p>
+                    <p>Programming is not just a career or work for me, but also a hobby. I've written countless amounts of code just for personal use or even for fun. You can find my personal github <a href="http://github.com/jwellstech">here</a>.</p>
+                
+                    <br>
+                    
+                    <div id="centeredlist">
+                        <h4 style="margin-bottom: -10px; text-align: center;">I'm proficient in a few coding languages, listed below.</h4>
+                        <ul>
+                            <li>Java</li>
+                            <li>C</li>
+                            <li>Python</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Javascript</li>
+                        </ul>
                     </div>
                 </div>
+            
+                <div id="music" class="post">
+                    <h2>Music</h2>
+                    <p>Music really envelops my life. I've been a pianist since I was in the 2nd grade and often play as a good way to relax. No matter what I'm doing, you can usually find me with something playing in the background.</p>
+                
+                    <div class="img-div">
+                        <img alt="My headphones of choice, the AKG K7XXs" src="img/headphones.jpg"/>
+                        <div class="txt-div">
+                            <p>My headphones of choice, the AKG K7XXs</p>
+                        </div>
+                    </div>
                 
                     <h3>Piano</h3>
-                <div class="img-div">
-                    <img src="img/piano.jpg"/>
-                    <div class="txt-div">
-                    <p>Me playing piano</p>
-                    </div>
-                </div>
-                <p>My favorite song to play is <a href="https://www.youtube.com/watch?v=actYt8WkdvE">Spectrum (ft. Matthew Koma) (Piano Version) by Zedd</a>.</p>
-            </div>
-            
-            <div id="skateboarding" class="post">
-                <h2>Skateboarding</h2>
-                <p>Skateboarding wasn't really a part of my life until 2016 when I got my first skateboard from my uncle. Although I'm not that good at tricks, I really enjoy riding around both alone and with friends. </p>
-                <div class="img-div">
-                    <img src="/img/skateboard.jpg" width="60%"/>
+                    <div class="img-div">
+                        <img src="img/piano.jpg"/>
                         <div class="txt-div">
-                            <p>Mall grab of my cruiser</p>
+                        <p>Me playing piano</p>
                         </div>
+                    </div>
+                    <p>My favorite song to play is <a href="https://www.youtube.com/watch?v=actYt8WkdvE">Spectrum (ft. Matthew Koma) (Piano Version) by Zedd</a>.</p>
                 </div>
-            </div>
             
-            <div id="photography" class="post">
-                <h2>Photography</h2>
-                <p>Photography is just a small hobby of mine that I've only recently begun to actively pursue. I plan to get a nice DSLR camera sometime in the next year and potentially even make some money taking pictures for people.</p>
-                
-                <div class="img-div">
-                    <img src="/img/genome1.jpg"/>
-                    <div class="txt-div">
-                        <p>A picture of the Genome Sciences building at UNC Chapel Hill</p>
+                <div id="skateboarding" class="post">
+                    <h2>Skateboarding</h2>
+                    <p>Skateboarding wasn't really a part of my life until 2016 when I got my first skateboard from my uncle. Although I'm not that good at tricks, I really enjoy riding around both alone and with friends. </p>
+                    <div class="img-div">
+                        <img src="/img/skateboard.jpg" width="60%"/>
+                            <div class="txt-div">
+                                <p>Mall grab of my cruiser</p>
+                            </div>
                     </div>
                 </div>
+            
+                <div id="photography" class="post">
+                    <h2>Photography</h2>
+                    <p>Photography is just a small hobby of mine that I've only recently begun to actively pursue. I plan to get a nice DSLR camera sometime in the next year and potentially even make some money taking pictures for people.</p>
                 
-                <div class="img-div">
-                    <img src="/img/cat.jpg"/>
-                    <div class="txt-div">
-                        <p>My aunt's cat sitting under their Christmas tree</p>
+                    <div class="img-div">
+                        <img src="/img/genome1.jpg"/>
+                        <div class="txt-div">
+                            <p>A picture of the Genome Sciences building at UNC Chapel Hill</p>
+                        </div>
+                    </div>
+                
+                    <div class="img-div">
+                        <img src="/img/cat.jpg"/>
+                        <div class="txt-div">
+                            <p>My aunt's cat sitting under their Christmas tree</p>
+                        </div>
                     </div>
                 </div>
-            </div>
             
-            <div id="work" class="post">
-                <h2>Motivation and Personal Drive</h2>
-                <h2>Strengths</h2>
-            </div>
-            
-            <div id="education" class="post">
-                <h2>Education</h2>
-                <div class="events">
-                    <h3>University of North Carolina at Chapel Hill</h3>
-                    <p class="date">- FALL 2016 - SPRING 2020</p>
-                    <p class="eventinfo">Computer science major</p>
+                <div id="work" class="post">
+                    <h2>Motivation and Personal Drive</h2>    
+                    <h2>Strengths</h2>
                 </div>
+            
+                <div id="education" class="post">
+                    <h2>Education</h2>
+                    <div class="events">
+                        <h3>University of North Carolina at Chapel Hill</h3>
+                        <p class="date">- FALL 2016 - SPRING 2020</p>
+                        <p class="eventinfo">Computer science major</p>
+                    </div>
                     
-                <div class="events" style="margin-bottom: 0px;">
-                    <h3>North Carolina School of Science and Mathematics</h3>
-                    <p class="date">- FALL 2014 - SPRING 2016</p>
-                    <p class="eventinfo">Attended junior and senior years of high school</p>
+                    <div class="events" style="margin-bottom: 0px;">
+                        <h3>North Carolina School of Science and Mathematics</h3>
+                        <p class="date">- FALL 2014 - SPRING 2016</p>
+                        <p class="eventinfo">Attended junior and senior years of high school</p>
+                    </div>
                 </div>
-            </div>
             
-            <div id="misc" class="post">
-<!--                <h2>Miscellaneous</h2>-->
-                <p>If I'm not doing one of the hobbies listed above I'm probably just hanging out with my friends and trying to have a good time.</p>
-                <img src="img/professional.jpg"/>
-                <p>Contact me here</p>
-                <a href="mailto:jwells.me@gmail.com">jwells.me@gmail.com</a>
+                <div id="misc" class="post">
+                    <a id="contactMe"></a>
+                    <p>If I'm not doing one of the hobbies listed above I'm probably just hanging out with my friends and trying to have a good time.</p>
+                    <img src="img/professional.jpg"/>
+                    <p>Contact me here</p>
+                    <a href="mailto:jwells.me@gmail.com">jwells.me@gmail.com</a>
+                </div>
             </div>
         </div>
     </body>

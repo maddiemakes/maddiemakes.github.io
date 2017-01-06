@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <title>Jordan Wells</title>
+        
+        <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Open+Sans" rel="stylesheet">
+        
+        
+<!--     Smooth link scrolling -->
+    <script src="/js/jquery.min.js"></script>
+    <script src="/js/jquery.localScroll.js"></script>
+    <script src="/js/jquery.scrollTo.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.linkScroll').localScroll({
+                duration: 800,
+                offset: -60
+            });
+        });
+    </script>
+        
+    </head>
+
+    <body>
+        
+        <ul class="navigation">
+            <a href="index.html"><li class="nav-item nav-head">Home</li></a>
+            <li class="nav-item nav-head">About Me</li>
+<!--            <a href="experience.html"><li class="nav-item">Experience</li></a>-->
+            <a href="#"><li class="nav-item">Education</li></a>
+<!--            <a href="contact.html"><li class="nav-item">Contact Me</li></a>-->
+<!--            <a href="#"><li class="nav-item">Resume</li></a>-->
+            <li class="nav-item nav-head">2015</li>
+            <a href="2015/webDevFinal/index.html"><li class="nav-item">Web Dev Final</li></a>
+<!--            <li class="nav-item nav-head">2014</li>-->
+<!--            <a href="#"><li class="nav-item nav-sub"></li></a>-->
+        </ul>
+        
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <label for="nav-trigger"></label>
+        
+<!-- The website is wrapped in this div because of the navigation bar -->
+        <div class="site-wrap">
+            
+            <a id="topOfPage"></a>
+        
+            <div id="titlename" class="topbar linkScroll">
+                <a href="#topOfPage"><h1>Jordan Wells</h1></a>
+                <div id="titledescription">
+                    <h4>Programmer | Musician | Student</h4>
+                </div>
+            </div>
+        
+            <div id="page">
+                
+                <div id="education" class="post">
+                    <h2>Education</h2>
+                    <div class="events">
+                        <h3>University of North Carolina at Chapel Hill</h3>
+                        <p class="date">- FALL 2016 - SPRING 2020</p>
+                        <p class="eventinfo">Computer science major</p>
+                    </div>
+                    
+                    <div class="events" style="margin-bottom: 0px;">
+                        <h3>North Carolina School of Science and Mathematics</h3>
+                        <p class="date">- FALL 2014 - SPRING 2016</p>
+                        <p class="eventinfo">Attended junior and senior years of high school</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+
+</html>
