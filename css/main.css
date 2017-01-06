@@ -35,16 +35,29 @@ body {
     background-size: 200%;
 }
 
+.site-wrap:clicked {
+    
+}
+
 .navigation a {
     color: #212121;
     text-decoration: none;
 }
 
 .navigation a:hover li, .navigator:not(.nav-head) {
-    color: rgb(115, 170, 22);
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    background: #e2e8df;
 }
 
 .navigation li {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+/*    font-family: 'Lora', sans-serif;*/
     font-size: 22px;
 /*    height: 30px;*/
     background: #d8d8d8;
@@ -58,6 +71,7 @@ body {
 .navigation .nav-head {
     margin-left: -35px;
     padding-left: 10px;
+    background: #cecece;
 }
 
 /*.navigation .nav-sub {*/
@@ -75,7 +89,7 @@ label[for="nav-trigger"] {
     left: 15px;
     z-index: 2;
     width: 30px;
-    height: 30px;
+    height: 28px;
     cursor: pointer;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewbox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='5'/><rect y='22' width='30' height='5'/><rect y='11' width='30' height='5'/></svg>")
 }
@@ -90,6 +104,9 @@ label[for="nav-trigger"] {
 }
 
 .nav-trigger + label, .site-wrap {
+    -webkit-transition: left 0.3s;
+    -moz-transition: left 0.3s;
+    -o-transition: left 0.3s;
     transition: left 0.3s;
 }
 

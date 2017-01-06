@@ -22,16 +22,29 @@
         });
     </script>
         
+<!--     Close menu when page clicked -->
+        <script type="text/javascript">
+            function closeMenu() {
+                $('.nav-trigger').attr('checked', false);
+            }
+            
+            $(document).ready(function () {
+                $('.site-wrap').click(function() {
+                    closeMenu();
+                });
+        </script>
+        
     </head>
 
     <body>
         
         <ul class="navigation">
+            <li class="nav-item nav-head" style="background-color: #212121; color: #d8d8d8; font-size: 25px">Navigation</li>
             <a href="index.html"><li class="nav-item nav-head">Home</li></a>
             <li class="nav-item nav-head">About Me</li>
-            <a href="experience.html"><li class="nav-item">Experience</li></a>
+<!--            <a href="experience.html"><li class="nav-item">Experience</li></a>-->
             <a href="education.html"><li class="nav-item">Education</li></a>
-            <a href="contact.html"><li class="nav-item">Contact Me</li></a>
+<!--            <a href="contact.html"><li class="nav-item">Contact Me</li></a>-->
 <!--            <a href="#"><li class="nav-item">Resume</li></a>-->
             <li class="nav-item nav-head">2015</li>
             <a href="2015/webDevFinal/index.html"><li class="nav-item">Web Dev Final</li></a>

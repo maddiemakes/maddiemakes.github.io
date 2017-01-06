@@ -6,7 +6,7 @@
         <link href="css/main.css" rel="stylesheet" type="text/css">
         <title>Jordan Wells</title>
         
-        <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Lora|Open+Sans" rel="stylesheet">
         
         
 <!--     Smooth link scrolling -->
@@ -22,12 +22,25 @@
         });
     </script>
         
+<!--     Close menu when page clicked -->
+        <script type="text/javascript">
+            function closeMenu() {
+                $('.nav-trigger').attr('checked', false);
+            }
+            
+            $(document).ready(function () {
+                $('.site-wrap').click(function() {
+                    closeMenu();
+                });
+        </script>
+        
     </head>
 
     <body>
         <a id="topOfPage"></a>
         
         <ul class="navigation">
+            <li class="nav-item nav-head" style="background-color: #212121; color: #d8d8d8; font-size: 25px">Navigation</li>
             <a href="#"><li class="nav-item nav-head">Home</li></a>
             <li class="nav-item nav-head">About Me</li>
 <!--            <a href="experience.html"><li class="nav-item">Experience</li></a>-->
@@ -40,10 +53,10 @@
 <!--            <a href="#"><li class="nav-item nav-sub"></li></a>-->
         </ul>
         
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+        <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
         <label for="nav-trigger"></label>
         
-<!-- The website is wrapped in this div because of the navigation bar -->
+<!-- The website is wrapped in this div because of the navigation menu -->
         <div class="site-wrap">
         
             <div id="titlename" class="topbar linkScroll">
