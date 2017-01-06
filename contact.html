@@ -10,30 +10,20 @@
         
         
 <!--     Smooth link scrolling -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/jquery.localScroll.js"></script>
-    <script src="/js/jquery.scrollTo.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.linkScroll').localScroll({
-                duration: 800,
-                offset: -60
-            });
-        });
-    </script>
-        
-<!--     Close menu when page clicked -->
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/jquery.localScroll.js"></script>
+        <script src="/js/jquery.scrollTo.js"></script>
         <script type="text/javascript">
-            function closeMenu() {
-                $('.nav-trigger').attr('checked', false);
-            }
-            
             $(document).ready(function () {
-                $('.site-wrap').click(function() {
-                    closeMenu();
+                $('.linkScroll').localScroll({
+                    duration: 800,
+                    offset: -60
                 });
             });
         </script>
+        
+<!--     Close menu when page clicked -->
+        <script type="text/javascript" src="js/menufunctions.js"></script>
         
     </head>
 
