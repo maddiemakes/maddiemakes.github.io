@@ -41,11 +41,13 @@ body {
 }
 
 .navigation a:hover li, .navigator:not(.nav-head) {
+    background: #e2e8df;
+    color: #333333;
+/*    text-decoration: underline;*/
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
     transition: all 0.2s ease;
-    background: #e2e8df;
 }
 
 .navigation li {
@@ -90,7 +92,7 @@ label[for="nav-trigger"] {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' width='30px' height='30px' viewbox='0 0 30 30' enable-background='new 0 0 30 30' xml:space='preserve'><rect width='30' height='5'/><rect y='22' width='30' height='5'/><rect y='11' width='30' height='5'/></svg>")
 }
 
-input {
+ input {
     display:none;
 }
 
