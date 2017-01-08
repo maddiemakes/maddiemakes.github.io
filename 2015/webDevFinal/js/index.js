@@ -70,6 +70,7 @@ function annoy() {
             tdelem32.style.fontFamily = "\"Comic Sans MS\", cursive, sans-serif";
             break;
         case 2:
+            alert("Epilepsy warning. Don't scroll as it may cause problems. If this is an issue, please go back to annoyance levels 0 or 1.")
             var rColor = randomColor();
             h2elem.style.color = rColor[1];
             h2elem2.style.color = rColor[0];
