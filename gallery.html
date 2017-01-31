@@ -28,25 +28,13 @@
         
         <script type="text/javascript" src="js/gallery.js"></script>
         
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+        
     </head>
 
-    <body>
+    <body ng-app="">
         
-        <ul class="navigation">
-            <li class="nav-item nav-head" style="background-color: #212121; color: #d8d8d8;">Navigation</li>
-            <li class="nav-item nav-head">About Me</li>
-            <a href="index.html"><li class="nav-item">Home</li></a>
-<!--            <a href="experience.html"><li class="nav-item">Experience</li></a>-->
-            <a href="education.html"><li class="nav-item">Education</li></a>
-            <a href="hobbies.html"><li class="nav-item">Hobbies</li></a>
-            <a href="#"><li class="nav-item">Gallery</li></a>
-<!--            <a href="contact.html"><li class="nav-item">Contact</li></a>-->
-<!--            <a href="#"><li class="nav-item">Resume</li></a>-->
-            <li class="nav-item nav-head">2015</li>
-            <a href="2015/webDevFinal/index.html"><li class="nav-item">Web Dev Final</li></a>
-<!--            <li class="nav-item nav-head">2014</li>-->
-<!--            <a href="#"><li class="nav-item nav-sub"></li></a>-->
-        </ul>
+        <div ng-include="'navigation.html'"></div>
         
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
         <label for="nav-trigger"></label>

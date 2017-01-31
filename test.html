@@ -8,7 +8,6 @@
         
         <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Open+Sans" rel="stylesheet">
         
-        
 <!--     Smooth link scrolling -->
         <script src="/js/jquery.min.js"></script>
         <script src="/js/jquery.localScroll.js"></script>
@@ -31,10 +30,11 @@
 
     <body ng-app="">
         
-        <div ng-include="'navigation.html'"></div>
-        
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger"></label>
+        <div ng-include="'navigation.html'">
+        </div>
+<!--        <div w3-include-html="navigation.html"></div>-->
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger"></label>
         
 <!-- The website is wrapped in this div because of the navigation bar -->
         <div class="site-wrap">
@@ -82,6 +82,11 @@
                 </div>
             </div>
         </div>
+<!--
+        <script>
+        w3IncludeHTML();
+        </script>
+-->
     </body>
 
 </html>
