@@ -43,6 +43,7 @@ body {
     -moz-transition: height 0.5s;
     -ms-transition: height 0.5s;
     transition: height 0.5s;
+/*    font-family: 'Raleway', sans-serif;*/
 }
 
 .custom-wrapper #navTitle {
@@ -52,6 +53,10 @@ body {
 
 .custom-wrapper.open {
     height: 13em;
+}
+
+.custom-wrapper.open #navTitle {
+    color: rgb(115, 170, 22);
 }
 
 
@@ -123,9 +128,17 @@ body {
     transform: rotate(-45deg);
 }
 
+.custom-wrapper #navBar:hover #navTitle {
+    background: rgba(234, 234, 234, 0.85);
+}
+
+.custom-wrapper.open #navBar:hover #navTitle {
+    background: rgba(234, 234, 234, 0.80);
+}
+
 #page-links a:hover {
-/*    color:green;*/
     color: rgb(115, 170, 22);
+    background: rgba(229, 229, 229, 0.81);
 }
 
 #menuBar {
@@ -139,7 +152,6 @@ body {
     font-family: 'Questrial', sans-serif;
     font-size: 1em;
     margin: .3em;
-    /*    margin: 40px auto;*/
     margin-bottom: 2em;
 }
 

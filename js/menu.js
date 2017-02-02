@@ -30,7 +30,8 @@ app.controller('menuController', ["$scope", function ($scope) {
                     toggleMenu();
                 }
             };
-            document.getElementById('toggle').addEventListener('click', function (e) {
+//            document.getElementById('toggle').addEventListener('click', function (e) {
+            document.getElementById('navBar').addEventListener('click', function (e) {
                 toggleMenu();
                 e.preventDefault();
             });
