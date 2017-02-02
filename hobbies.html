@@ -1,162 +1,176 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-<!--        <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-        
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-        <title>Hobbies - Jordan Wells</title>
-        
-        <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Lora|Open+Sans" rel="stylesheet">
-        
-        
-<!--     Smooth link scrolling -->
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/jquery.localScroll.js"></script>
-        <script src="/js/jquery.scrollTo.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('.linkScroll').localScroll({
-                    duration: 800,
-                    offset: -60
-                });
-            });
-        </script>
-        
-<!--     Close menu when page clicked -->
-        <script type="text/javascript" src="js/menufunctions.js"></script>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-        
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Jordan Wells</title>
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+</head>
 
-    <body ng-app="">
-        
-        <div ng-include="'navigation.html'"></div>
-        
-        <input type="checkbox" id="nav-trigger" class="nav-trigger"/>
-        <label for="nav-trigger"></label>
-        
-<!-- The website is wrapped in this div because of the navigation menu -->
-        <div class="site-wrap">
-            
-            <a id="topOfPage"></a>
-        
-            <div id="titlename" class="topbar linkScroll">
-                <a href="#topOfPage"><h1>Jordan Wells</h1></a>
-                <div id="titledescription">
-                    <h4>Programmer | Musician | Student</h4>
+<body ng-app="menuApp">
+    <div ng-include="'header.html'"></div>
+    <!--    row 1-->
+    <div class="pure-g">
+        <!--    column 1-->
+        <div class="pure-u-1-24 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-1-5"> </div>
+        <!--    column 2-->
+        <div class="pure-u-22-24 pure-u-sm-20-24 pure-u-md-16-24 pure-u-lg-3-5">
+            <div class="post">
+                <h2>Computers</h2>
+                <p>I've spent my entire life dealing with computers, from hardware to software. I have a large interest in building hardware and have put together about 7 desktop computers now, including my own.</p>
+                <p>I've grown up playing video games and they're a big hobby of mine. I have over 200 games in my Steam library and my favorite games are probably <a href="https://en.wikipedia.org/wiki/Heavy_Rain">Heavy Rain</a> and <a href="https://en.wikipedia.org/wiki/Life_Is_Strange">Life is Strange</a>. The game you're most likely to see me playing right now is Blizzard's <a href="https://playoverwatch.com/en-us/">Overwatch</a>.</p>
+                <div class="pure-g">
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                    <div class="pure-u-md-20-24 pure-u-lg-16-24"> <img class="pure-img" src="img/graphicsCard.jpg" /> </div>
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                </div>
+                <!--                <div class="img-div"> <img src="img/graphicsCard.jpg" />-->
+                <!--                    <div class="txt-div">-->
+                <!--                        <p>My graphics card installed in my desktop</p>-->
+                <!--                    </div>-->
+                <!--                </div>-->
+                <!--                <-->
+                <p>Aside from just playing video games I also love programming and have written some games/programs with friends and peers. The two publicly available programs I'm most proud of are <a href="http://github.com/jwellstech/zombiegame">Zombiegame</a> and <a href="http://github.com/jwellstech/boggle">Boggle</a>.</p>
+                <p>Programming is not just a career or work for me, but also a hobby. I've written countless amounts of code just for personal use or even for fun. You can find my personal github <a href="http://github.com/jwellstech">here</a>.</p>
+                <br>
+                <div id="centeredlist">
+                    <h4 style="text-align: center;">I'm proficient in a few coding languages, listed below.</h4>
+                    <div class="pure-g">
+                        <div class="pure-u-md-4-24"> </div>
+                        <div class="pure-u-1 pure-u-md-16-24">
+                            <div class="pure-u-g" style="padding-left: 25%;">
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <li>Java</li>
+                                </div>
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <li>C</li>
+                                </div>
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <li>Python</li>
+                                </div>
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <li>HTML</li>
+                                </div>
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <li>CSS</li>
+                                </div>
+                                <div class="pure-u-1 pure-u-sm-1-3">
+                                    <li>Javascript</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pure-u-md-4-24"> </div>
+                    </div>
                 </div>
             </div>
-        
-            <div id="page">
-                <div id="hardware" class="post">
-                    <h2>Computers</h2>
-                    <p>I've spent my entire life dealing with computers, from hardware to software. I have a large interest in building hardware and have put together about 7 desktop computers now, including my own.</p>
-                    <p>I've grown up playing video games and they're a big hobby of mine. I have over 200 games in my Steam library and my favorite games are probably <a href="https://en.wikipedia.org/wiki/Heavy_Rain">Heavy Rain</a> and <a href="https://en.wikipedia.org/wiki/Life_Is_Strange">Life is Strange</a>. The game you're most likely to see me playing right now is Blizzard's <a href="https://playoverwatch.com/en-us/">Overwatch</a>.</p>
-                
-                    <div class="img-div">
-                        <img src="img/graphicsCard.jpg"/>
-                        <div class="txt-div">
-                            <p>My graphics card installed in my desktop</p>
-                        </div>
-                    </div>
-                
-                    <p>Aside from just playing video games I also love programming and have written some games/programs with friends and peers. The two publicly available programs I'm most proud of are <a href="http://github.com/jwellstech/zombiegame">Zombiegame</a> and <a href="http://github.com/jwellstech/boggle">Boggle</a>.</p>
-                    <p>Programming is not just a career or work for me, but also a hobby. I've written countless amounts of code just for personal use or even for fun. You can find my personal github <a href="http://github.com/jwellstech">here</a>.</p>
-                
-                    <br>
-                    
-                    <div id="centeredlist">
-                        <h4 style="margin-bottom: -10px; text-align: center;">I'm proficient in a few coding languages, listed below.</h4>
-                        <ul>
-                            <li>Java</li>
-                            <li>C</li>
-                            <li>Python</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                            <li>Javascript</li>
-                        </ul>
+            <div id="music" class="post">
+                <h2>Music</h2>
+                <p>Music really envelops my life. I've been a pianist since I was in the 2nd grade and often play as a good way to relax. No matter what I'm doing, you can usually find me with something playing in the background.</p>
+                <div class="pure-g">
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                    <div class="pure-u-md-20-24 pure-u-lg-16-24"> <img class="pure-img" src="img/headphones.jpg" /> </div>
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                </div>
+                <!--
+                <div class="img-div"> <img alt="My headphones of choice, the AKG K7XXs" src="img/headphones.jpg" />
+                    <div class="txt-div">
+                        <p>My headphones of choice, the AKG K7XXs</p>
                     </div>
                 </div>
-            
-                <div id="music" class="post">
-                    <h2>Music</h2>
-                    <p>Music really envelops my life. I've been a pianist since I was in the 2nd grade and often play as a good way to relax. No matter what I'm doing, you can usually find me with something playing in the background.</p>
-                
-                    <div class="img-div">
-                        <img alt="My headphones of choice, the AKG K7XXs" src="img/headphones.jpg"/>
-                        <div class="txt-div">
-                            <p>My headphones of choice, the AKG K7XXs</p>
-                        </div>
-                    </div>
-                
-                    <h3>Piano</h3>
-                    <div class="img-div">
-                        <img src="img/piano.jpg"/>
-                        <div class="txt-div">
+-->
+                <h3>Piano</h3>
+                <div class="pure-g">
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                    <div class="pure-u-md-20-24 pure-u-lg-16-24"> <img class="pure-img" src="img/piano.jpg" /> </div>
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                </div>
+                <!--
+                <div class="img-div"> <img src="img/piano.jpg" />
+                    <div class="txt-div">
                         <p>Me playing piano</p>
-                        </div>
-                    </div>
-                    <p>My favorite song to play is <a href="https://www.youtube.com/watch?v=actYt8WkdvE">Spectrum (ft. Matthew Koma) (Piano Version) by Zedd</a>.</p>
-                </div>
-            
-                <div id="skateboarding" class="post">
-                    <h2>Skateboarding</h2>
-                    <p>Skateboarding wasn't really a part of my life until 2016 when I got my first skateboard from my uncle. Although I'm not that good at tricks, I really enjoy riding around both alone and with friends. </p>
-                    <div class="img-div">
-                        <img src="/img/skateboard.jpg" width="60%"/>
-                            <div class="txt-div">
-                                <p>Mall grab of my cruiser</p>
-                            </div>
                     </div>
                 </div>
-            
-                <div id="photography" class="post">
-                    <h2>Photography</h2>
-                    <p>Photography is just a small hobby of mine that I've only recently begun to actively pursue. I plan to get a nice DSLR camera sometime in the next year and potentially even make some money taking pictures for people.</p>
-                
-                    <div class="img-div">
-                        <img src="/img/genome1.jpg"/>
-                        <div class="txt-div">
-                            <p>A picture of the Genome Sciences building at UNC Chapel Hill</p>
-                        </div>
-                    </div>
-                
-                    <div class="img-div">
-                        <img src="/img/cat.jpg"/>
-                        <div class="txt-div">
-                            <p>My aunt's cat sitting under their Christmas tree</p>
-                        </div>
+-->
+                <p>My favorite song to play is <a href="https://www.youtube.com/watch?v=actYt8WkdvE">Spectrum (ft. Matthew Koma) (Piano Version) by Zedd</a>.</p>
+            </div>
+            <div id="skateboarding" class="post">
+                <h2>Skateboarding</h2>
+                <p>Skateboarding wasn't really a part of my life until 2016 when I got my first skateboard from my uncle. Although I'm not that good at tricks, I really enjoy riding around both alone and with friends. </p>
+                <div class="pure-g">
+                    <div class="pure-u-1 pure-u-md-2-24 pure-u-lg-4-24"></div>
+                    <div class="pure-u-md-20-24 pure-u-lg-16-24"> <img class="pure-img" src="img/skateboard.jpg" /> </div>
+                    <div class="pure-u-1 pure-u-md-2-24 pure-u-lg-4-24"></div>
+                </div>
+                <!--
+                <div class="img-div"> <img src="/img/skateboard.jpg" width="60%" />
+                    <div class="txt-div">
+                        <p>Mall grab of my cruiser</p>
                     </div>
                 </div>
-            
-                <div id="work" class="post">
-                    <h2>Motivation and Personal Drive</h2>    
-                        <p>When given a job, I feel that it is my responsibility to ensure not only that the task is completed by the end date, but also that it is completed well. I believe that if you are not able to submit quality work that you do not deserve to be assigned important tasks. Therefore, I try to make sure that I am always creating quality content that pleases other people. When that comes to programming, I try to create the best code that I can so that it is pleasing not only to the consumer but also fellow developers I may be working with or that may be working with my code. In the past, these qualities have allowed me to effectively lead teams. When writing <a href="http://github.com/jwellstech/zombiegame">Zombiegame</a>, I worked with two other developers to create the game, using my skills in conflict resolution and management to ensure that everyone was happy with their role in the project.</p>
-                    <h2>Strengths</h2>
-                        <p>At work I'm a hardworking individual who really enjoys communicating with others. I'm usually not too hard to get along with and I'm always trying to make sure everyone is staying focused enough to get their work done in an appropriate amount of time. I'm a very accepting person when it comes to peoples' beliefs and interests, so in a work environment that would never be an issue as long as everyone respects each other enough to not get into constant arguments.</p>
-                        <p>I believe a good leader is one who is simply a positive addition to the group and does not seem to stand above or higher than anyone else. A good leader works with everyone to make sure that people get along and are contributing well. This is why, when I lead a group, I don't like to be a leader that thinks they're better than anyone else and just tells everyone what to do. I make sure to touch in with each person and establish that they are satisfied with the group.</p>
-                        <p>When it comes to something such as helping people solve computer problems, I become very involved in making sure I don't leave without fixing the issue. It becomes a personal challenge that I feel greatly accomplished upon completing. Because many of my friends and family know of my knowledge and experience in the technology field, I've been tasked as tech support a lot in my life. Helping people of all ages (from younger than me to the elderly) overcome the hill that is the ever-growing, ever-advancing field of technology has been a part of my life for the great majority of it. I've always gotten positive feedback and take it to heart every time. I like making people happy, and solving their problems is a good way to accomplish that.</p>
+--></div>
+            <div id="photography" class="post">
+                <h2>Photography</h2>
+                <p>Photography is just a small hobby of mine that I've only recently begun to actively pursue. I plan to get a nice DSLR camera sometime in the next year and potentially even make some money taking pictures for people.</p>
+                <div class="pure-g">
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                    <div class="pure-u-md-20-24 pure-u-lg-16-24"> <img class="pure-img" src="img/genome1.jpg" /> </div>
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
                 </div>
-            
-                <div id="misc" class="post">
-                    <a id="contactMe"></a>
-                    <p>If I'm not doing one of the hobbies listed above, I'm probably just hanging out with my friends and having a good time.</p>
-<!--                    <img src="img/gaming.jpg"/>-->
-                    <div class="img-div">
-                        <img src="img/gaming.jpg"/>
-                        <div class="txt-div">
-                            <p>Gaming with some friends</p>
-                        </div>
-                    </div>
-                    <div style="text-align: center">
-                        <p >Contact me here</p>
-                        <a href="mailto:jwells.me@gmail.com">jwells.me@gmail.com</a>
+                <!--
+                <div class="img-div"> <img src="/img/genome1.jpg" />
+                    <div class="txt-div">
+                        <p>A picture of the Genome Sciences building at UNC Chapel Hill</p>
                     </div>
                 </div>
+-->
+                <div class="pure-g">
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                    <div class="pure-u-md-20-24 pure-u-lg-16-24"> <img class="pure-img" src="img/cat.jpg" /> </div>
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                </div>
+                <!--
+                <div class="img-div"> <img src="/img/cat.jpg" />
+                    <div class="txt-div">
+                        <p>My aunt's cat sitting under their Christmas tree</p>
+                    </div>
+                </div>
+--></div>
+            <div id="work" class="post">
+                <h2>Motivation and Personal Drive</h2>
+                <p>When given a job, I feel that it is my responsibility to ensure not only that the task is completed by the end date, but also that it is completed well. I believe that if you are not able to submit quality work that you do not deserve to be assigned important tasks. Therefore, I try to make sure that I am always creating quality content that pleases other people. When that comes to programming, I try to create the best code that I can so that it is pleasing not only to the consumer but also fellow developers I may be working with or that may be working with my code. In the past, these qualities have allowed me to effectively lead teams. When writing <a href="http://github.com/jwellstech/zombiegame">Zombiegame</a>, I worked with two other developers to create the game, using my skills in conflict resolution and management to ensure that everyone was happy with their role in the project.</p>
+                <h2>Strengths</h2>
+                <p>At work I'm a hardworking individual who really enjoys communicating with others. I'm usually not too hard to get along with and I'm always trying to make sure everyone is staying focused enough to get their work done in an appropriate amount of time. I'm a very accepting person when it comes to peoples' beliefs and interests, so in a work environment that would never be an issue as long as everyone respects each other enough to not get into constant arguments.</p>
+                <p>I believe a good leader is one who is simply a positive addition to the group and does not seem to stand above or higher than anyone else. A good leader works with everyone to make sure that people get along and are contributing well. This is why, when I lead a group, I don't like to be a leader that thinks they're better than anyone else and just tells everyone what to do. I make sure to touch in with each person and establish that they are satisfied with the group.</p>
+                <p>When it comes to something such as helping people solve computer problems, I become very involved in making sure I don't leave without fixing the issue. It becomes a personal challenge that I feel greatly accomplished upon completing. Because many of my friends and family know of my knowledge and experience in the technology field, I've been tasked as tech support a lot in my life. Helping people of all ages (from younger than me to the elderly) overcome the hill that is the ever-growing, ever-advancing field of technology has been a part of my life for the great majority of it. I've always gotten positive feedback and take it to heart every time. I like making people happy, and solving their problems is a good way to accomplish that.</p>
+            </div>
+            <div id="misc" class="post">
+                <a id="contactMe"></a>
+                <p>If I'm not doing one of the hobbies listed above, I'm probably just hanging out with my friends and having a good time.</p>
+                <!--                    <img src="img/gaming.jpg"/>-->
+                <div class="pure-g">
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                    <div class="pure-u-md-20-24 pure-u-lg-16-24"> <img class="pure-img" src="img/gaming.jpg" /> </div>
+                    <div class="pure-u-md-2-24 pure-u-lg-4-24"></div>
+                </div>
+                <!--
+                <div class="img-div"> <img src="img/gaming.jpg" />
+                    <div class="txt-div">
+                        <p>Gaming with some friends</p>
+                    </div>
+                </div>
+-->
+                <div style="text-align: center">
+                    <p>Contact me here</p> <a href="mailto:jwells.me@gmail.com">jwells.me@gmail.com</a> </div>
             </div>
         </div>
-    </body>
+        <!--    column 3-->
+        <div class="pure-u-1-24 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-1-5"> </div>
+    </div>
+</body>
 
 </html>

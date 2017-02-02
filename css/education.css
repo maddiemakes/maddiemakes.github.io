@@ -1,0 +1,11 @@
+.schoolLogo {
+    width: 30px;
+    top: 0.5em;
+    display: inline-block;
+    position: relative;
+}
+
+.post .date {
+    margin-left: 44px;
+    margin-top: 0;
+}

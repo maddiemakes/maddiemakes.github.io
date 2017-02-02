@@ -1,87 +1,35 @@
 <!DOCTYPE html>
 <html>
 
-    <head>
-        
-        <link href="css/main.css" rel="stylesheet" type="text/css">
-        <title>Jordan Wells</title>
-        
-        <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Open+Sans" rel="stylesheet">
-        
-        
-<!--     Smooth link scrolling -->
-        <script src="/js/jquery.min.js"></script>
-        <script src="/js/jquery.localScroll.js"></script>
-        <script src="/js/jquery.scrollTo.js"></script>
-        <script type="text/javascript">
-            $(document).ready(function () {
-                $('.linkScroll').localScroll({
-                    duration: 800,
-                    offset: -60
-                });
-            });
-        </script>
-        
-<!--     Close menu when page clicked -->
-        <script type="text/javascript" src="js/menufunctions.js"></script>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-        
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Jordan Wells</title>
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+</head>
 
-    <body ng-app="">
+<body ng-app="menuApp">
+	<div ng-include="'header.html'"></div>
+    
+<!--    row 1-->
+    <div class="pure-g">
+<!--    column 1-->
+        <div class="pure-u-1-24 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-1-5"> </div>
         
-        <div ng-include="'navigation.html'"></div>
-        
-        <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger"></label>
-        
-<!-- The website is wrapped in this div because of the navigation bar -->
-        <div class="site-wrap">
-            
-            <a id="topOfPage"></a>
-        
-            <div id="titlename" class="topbar linkScroll">
-                <a href="#topOfPage"><h1>Jordan Wells</h1></a>
-                <div id="titledescription">
-                    <h4>Programmer | Musician | Student</h4>
-                </div>
-            </div>
-        
-            <div id="page">
-                <div id="postTitle" class="post">
-                    <h2>Header</h2>
-                    <p>Lorem ipsum sit dolor amet</p>
-                
-                    <div class="img-div">
-                        <img src="img/imageFile.jpg"/>
-                        <div class="txt-div">
-                            <p>Image caption</p>
-                        </div>
-                    </div>
-                
-                    <div id="centeredlist">
-                        <h4 style="margin-bottom: -10px; text-align: center;">Table title</h4>
-                        <ul>
-                            <li>List item</li>
-                            <li>List item</li>
-                            <li>List item</li>
-                            <li>List item</li>
-                            <li>List item</li>
-                            <li>List item</li>
-                        </ul>
-                    </div>
-                
-                
-                    <div class="events">
-                        <h3>Event Title</h3>
-                        <p class="date">- Date start - Date end</p>
-                        <p class="eventinfo">Event description</p>
-                    </div>
-                    
-                </div>
+<!--    column 2-->
+        <div class="pure-u-22-24 pure-u-sm-20-24 pure-u-md-16-24 pure-u-lg-3-5">
+            <div class="post">
             </div>
         </div>
-    </body>
+        
+<!--    column 3-->
+        <div class="pure-u-1-24 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-1-5"> </div>
+    </div>
+    
+</body>
 
 </html>
