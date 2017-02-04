@@ -10,5 +10,3 @@ RewriteEngine On
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^/]+)/$ $1.html
 RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^(.*)([^/])$        /$1$2/ [L,R=301]
