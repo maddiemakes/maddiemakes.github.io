@@ -11,5 +11,4 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule ^([^/]+)/$ $1.html
 RewriteRule ^([^/]+)/([^/]+)/$ /$1/$2.html
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule ^[^/]+$ %{REQUEST_URI}/ [L,R=301]
-RewriteRule ^(.*)([^/])$ http://%{HTTP_HOST}/$1$2/ [L,R=301]
+RewriteRule ^(.*)([^/])$        /$1$2/ [L,R=301]
