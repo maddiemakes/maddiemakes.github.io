@@ -172,3 +172,12 @@ body {
         border-radius: 0%;
     }
 }
+@media screen and (max-width: 24em) {
+    .custom-wrapper #navTitle {
+        opacity: 0;
+    }
+    .custom-wrapper.open #navTitle {
+        opacity: 0;
+    }
+    
+}
