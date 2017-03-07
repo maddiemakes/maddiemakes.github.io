@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Only the purest - Pure CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <!-- Pretty fly for a white guy - Main CSS -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Jordan Wells</title>
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body ng-app="menuApp">
+    <!-- Heads up! - include the header/menu -->
+    <div ng-include="'header.html'"></div>
+    <!-- row 1-->
+    <div class="pure-g">
+        <!-- column 1-->
+        <div class="pure-u-1-24 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-1-5"> </div>
+        <!-- column 2-->
+        <div class="pure-u-22-24 pure-u-sm-20-24 pure-u-md-16-24 pure-u-lg-3-5">
+            <div class="post">
+                <h2>Linked List</h2>
+                <p>A linked list is like a backwards array list. The LinkedList knows <code>firstLink</code>, which is the most-recently inserted Link.</p>
+                <h3>Insert</h3>
+                <p>To add a new Link to the LinkedList, we just set the new Link's <code>next</code> to the current <code>firstLink</code> and then set <code>firstLink</code> to the new Link.</p>
+                <h3>Remove</h3>
+                <p>To remove a Link from a LinkedList, we set the <code>next</code> of the previous Link (the one before the Link being removed) to the <code>next</code> of the Link being removed. If the Link being removed is <code>firstLink</code>, then just set <code>firstLink</code> to <code>firstLink.next</code>.</p>
+                
+                <h3>Time Complexities</h3>
+                <table class="pure-table pure-table-">
+                    <thead>
+                        <tr>
+                            <td>Algorithm</td>
+                            <td>Average</td>
+                            <td>Worst Case</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Insert</td>
+                            <td>O(N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                        <tr>
+                            <td>Remove</td>
+                            <td>O(N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                        <tr>
+                            <td>Find</td>
+                            <td>O(N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="post">
+                <h2>Binary Search Tree (BST)</h2>
+                <p>A binary search tree is a way of storing data in a tree formation. Each piece of data in the BST is referred to as a <b>node</b> and the node at the top of the tree is referred to as <b>root</b>. Each node has <b>children</b>, the nodes below it, and every child has a <b>parent</b>, the node above it. The child to the left is referred to as the <b>left child</b>, and the child to the right is the <b>right child</b>. If a node has no children, it is referred to as a <b>leaf node</b>.</p>
+                
+                <h3>Insert</h3>
+                <p>When you insert a new node into a BST, you compare its value to each node, starting at the root. If the new node is less than the comparing node, move to the left. If the new node is greater than the comparing node, move to the right. If the comparing node does not have any children, insert the new node here.</p>
+                
+                <h3>Remove</h3>
+                <p>When you remove a node from a BST, there are several cases.</p>
+                <ul>
+                    <li>If the node being removed is a leaf node, just remove it.</li> 
+                    <li>If the node being deleted has only one child, then replace the node with said child.</li>
+                    <li>If the node being deleted has two children, replace it with the left child.</li>
+                </ul>
+                
+                <h3>Formulas</h3>
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Max height</td>
+                            <td>N-1</td>
+                        </tr>
+                        <tr>
+                            <td>Min height</td>
+                            <td>floor(log N)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Time Complexities</h3>
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td>Algorithm</td>
+                            <td>Average</td>
+                            <td>Worst Case</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Insert</td>
+                            <td>O(log N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                        <tr>
+                            <td>Remove</td>
+                            <td>O(log N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                        <tr>
+                            <td>Find</td>
+                            <td>O(log N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="post"> 
+                <h2>AVL Tree</h2>
+                <p>Balanced BST</p>
+                <p>When you insert, sometimes the tree becomes imbalanced. In order to balance it, count up from the inserted node and find the first imbalanced one (usually two parents up). From there, count the movements to the inserted node (either left or right). Refer to the table below for how to rotate.</p>
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td>Node movement</td>
+                            <td>Rotation solution</td>
+                            <td>Node(s) to rotate</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>LL</td>
+                            <td>R</td>
+                            <td>Middle</td>
+                        </tr>
+                        <tr>
+                            <td>RR</td>
+                            <td>L</td>
+                            <td>Middle</td>
+                        </tr>
+                        <tr>
+                            <td>LR</td>
+                            <td>LR</td>
+                            <td>Bottom then middle</td>
+                        </tr>
+                        <tr>
+                            <td>RL</td>
+                            <td>RL</td>
+                            <td>Bottom then middle</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Time Complexities</h3>
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td>Algorithm</td>
+                            <td>Average</td>
+                            <td>Worst Case</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Insert</td>
+                            <td>O(log N)</td>
+                            <td>O(log N)</td>
+                        </tr>
+                        <tr>
+                            <td>Remove</td>
+                            <td>O(log N)</td>
+                            <td>O(log N)</td>
+                        </tr>
+                        <tr>
+                            <td>Find</td>
+                            <td>O(log N)</td>
+                            <td>O(log N)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="post">
+                <h2>Binary Heap</h2>
+                
+                <h3>Formulas</h3>
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Parent</td>
+                            <td>floor(i/2)</td>
+                        </tr>
+                        <tr>
+                            <td>Left Child</td>
+                            <td>2*i</td>
+                        </tr>
+                        <tr>
+                            <td>Right Child</td>
+                            <td>2*i+1</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <h3>Time Complexities</h3>
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td>Algorithm</td>
+                            <td>Average</td>
+                            <td>Worst Case</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Insert</td>
+                            <td>O(1)</td>
+                            <td>O(log N)</td>
+                        </tr>
+                        <tr>
+                            <td>Remove</td>
+                            <td>O(log N)</td>
+                            <td>O(log N)</td>
+                        </tr>
+                        <tr>
+                            <td>Find</td>
+                            <td>O(N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                        <tr>
+                            <td>Space</td>
+                            <td>O(N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                        <tr>
+                            <td>Peek</td>
+                            <td>O(1)</td>
+                            <td>O(1)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+        </div>
+        <!-- column 3-->
+        <div class="pure-u-1-24 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-1-5"> </div>
+    </div>
+</body>
+
+</html>
