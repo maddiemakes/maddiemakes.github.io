@@ -210,6 +210,46 @@
             </div>
             
             <div class="post">
+                <h1>Splay Tree</h1>
+                <p>Nearly balanced BST</p>
+                <p>In a splay tree, whenever a node is accessed, the tree is "<b>splayed</b>," or reorganized so that the accessed node becomes root. This allows for faster access of recently accessed nodes.</p>
+                <p><b>Note:</b> in <code>find()</code>, if the node is not found, still splay the last node accessed.</p>
+                
+                <h3>Time Complexities</h3>
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td>Algorithm</td>
+                            <td>Average</td>
+                            <td>Worst Case</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Insert</td>
+                            <td>O(log N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                        <tr>
+                            <td>Remove</td>
+                            <td>O(log N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                        <tr>
+                            <td>Find</td>
+                            <td>O(log N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                        <tr>
+                            <td>Splay</td>
+                            <td>O(log N)</td>
+                            <td>O(N)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="post">
                 <h1>Binary Heap</h1>
                 
                 <h3>Formulas</h3>
