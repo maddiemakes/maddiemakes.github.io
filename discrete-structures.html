@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Only the purest - Pure CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <!-- Pretty fly for a white guy - Main CSS -->
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Jordan Wells</title>
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Raleway|Roboto+Condensed|Crimson+Text|Montserrat|Open+Sans" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script type="text/javascript" src="js/menu.js"></script>
+</head>
+
+<body ng-app="menuApp">
+    <!-- Heads up! - include the header/menu -->
+    <div ng-include="'header.html'"></div>
+    <!-- row 1-->
+    <div class="pure-g">
+        <!-- column 1-->
+        <div class="pure-u-1-24 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-1-5"> </div>
+        <!-- column 2-->
+        <div class="pure-u-22-24 pure-u-sm-20-24 pure-u-md-16-24 pure-u-lg-3-5">
+            <div class="post"> 
+                
+                <h1>Propositional Calculus</h1>
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td>Symbol</td>
+                            <td>Meaning</td>
+                            <td>Defined as</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>∧</td>
+                            <td>and</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>∨</td>
+                            <td>or</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>¬</td>
+                            <td>not</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>⊃ / →</td>
+                            <td>implication</td>
+                            <td>¬p ∨ q</td>
+                        </tr>
+                        <tr>
+                            <td>≡ / ↔</td>
+                            <td>equivalence</td>
+                            <td>(p ∧ ¬q) ∨ (q ∧ ¬p)</td>
+                        </tr>
+                        <tr>
+                            <td>⊕</td>
+                            <td>exclusive or (xor)</td>
+                            <td>(p ∧ ¬q) ∨ (q ∧ ¬p)</td>
+                        </tr>
+                        <tr>
+                            <td>nand</td>
+                            <td>nand</td>
+                            <td>¬(p∧q)</td>
+                        </tr>
+                        <tr>
+                            <td>nor</td>
+                            <td>nor</td>
+                            <td>¬(p ∨ q)</td>
+                        </tr>
+                        <tr>
+                            <td>⊨</td>
+                            <td>satisfies/true</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>⊭</td>
+                            <td>does not satisfy</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <br>
+                
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td>Term</td>
+                            <td>Definition</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>proposition</td>
+                            <td>a statement that is either true or false</td>
+                        </tr>
+                        <tr>
+                            <td>tautology</td>
+                            <td>all valuations satisfy it</td>
+                        </tr>
+                        <tr>
+                            <td>contradiction</td>
+                            <td>no valuation satisfies it</td>
+                        </tr>
+                        <tr>
+                            <td>equivalent</td>
+                            <td>two formulas are equivalent if they are satisfied by the same valuations</td>
+                        </tr>
+                        <tr>
+                            <td>logical consequence</td>
+                            <td>B is a logical consequence of A if every valuation that satisfies A also satisfies B</td>
+                        </tr>
+                        <tr>
+                            <td>contrapositive</td>
+                            <td>¬q ⊃ ¬p is contrapositive of p ⊃ q</td>
+                        </tr>
+                        <tr>
+                            <td>converse</td>
+                            <td>p ⊃ q is converse of q ⊃ p</td>
+                        </tr>
+                        <tr>
+                            <td>inverse</td>
+                            <td>(p ⊃ q) is inverse of (¬p ⊃ ¬q)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <br>
+                
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td>Property</td>
+                            <td>Example</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>deMorgan laws</td>
+                            <td>(p ∧ q) ≡ ¬(¬p ∨ ¬q)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>(p ∨ q) ≡ ¬(¬p ∧ ¬q)</td>
+                        </tr>
+                        <tr>
+                            <td>Commutativity</td>
+                            <td>(p ∨ q) ≡ (q ∨ p)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>(p ∧ q) ≡ (q ∧ p)</td>
+                        </tr>
+                        <tr>
+                            <td>Associativity</td>
+                            <td>(p ∨ (q ∨ r)) ≡ ((p ∨ q) ∨ r)</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>(p ∧ (q ∧ r)) ≡ (p ∧ (q ∧ r))</td>
+                        </tr>
+                        <tr>
+                            <td>Distributivity</td>
+                            <td>(p ∧ (q ∨ r)) ≡ ((p ∧ q) ∨ (p ∧ r))</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>(p ∨ (q ∧ r)) ≡ ((p ∨ q) ∧ (p ∨ r))</td>
+                        </tr>
+                        <tr>
+                            <td>Idempotence</td>
+                            <td>(p ∧ p) ≡ p</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>(p ∨ p) ≡ p</td>
+                        </tr>
+                        <tr>
+                            <td>Absorption</td>
+                            <td>(p ∧ (p ∨ q)) ≡ (p ∨ (p ∧ q)) ≡ p</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="post"> 
+                <h1>Sets</h1>
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td>Symbol</td>
+                            <td>Meaning</td>
+                            <td>Defined as</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>∅</td>
+                            <td>empty set</td>
+                            <td>{}</td>
+                        </tr>
+                        <tr>
+                            <td>∈</td>
+                            <td>membership</td>
+                            <td>a ∈ {a, b, c}</td>
+                        </tr>
+                        <tr>
+                            <td>&notin;</td>
+                            <td>not a member</td>
+                            <td>a &notin; {b,c}</td>
+                        </tr>
+                        <tr>
+                            <td>⊆</td>
+                            <td>subset</td>
+                            <td>A ⊆ B if all elements of A are elements of B</td>
+                        </tr>
+                        <tr>
+                            <td>=</td>
+                            <td>equal to</td>
+                            <td>A = B if A ⊆ B and B ⊆ A</td>
+                        </tr>
+                        <tr>
+                            <td>∪</td>
+                            <td>union</td>
+                            <td>x ∈ A ∪ B iff x ∈ A or x ∈ B</td>
+                        </tr>
+                        <tr>
+                            <td>∩</td>
+                            <td>intersect</td>
+                            <td>x ∈ A ∩ B iff x ∈ A and x ∈ B</td>
+                        </tr>
+                        <tr>
+                            <td>|A|</td>
+                            <td>cardinality</td>
+                            <td>the number of elements in the set A</td>
+                        </tr>
+                        <tr>
+                            <td>x ∈ &Amacr;</td>
+                            <td>complement</td>
+                            <td>x ∈ &Amacr; iff x ∈ U ∧ x &notin; A</td>
+                        </tr>
+                        <tr>
+                            <td>\</td>
+                            <td>difference</td>
+                            <td>x ∈ A \ B iff x ∈ A ∧ x &notin; B</td>
+                        </tr>
+                        <tr>
+                            <td>x∈A⊕B</td>
+                            <td>symmetric difference</td>
+                            <td>x ∈ A ⊕ B iff x ∈ ((A \ B) ∪ (B \ A))</td>
+                        </tr>
+                        <tr>
+                            <td>&#x228E;</td>
+                            <td>disjoint union</td>
+                            <td>A&#x228E;B is an error if A∩B is not empty</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>A&#x228E;B is A∪B if A∩B is empty</td>
+                        </tr>
+                        <tr>
+                            <td>×</td>
+                            <td>Cartesian product</td>
+                            <td>A × B is {(a, b)|a ∈ A, b ∈ B}</td>
+                        </tr>
+                        <tr>
+                            <td>P</td>
+                            <td>Power set</td>
+                            <td>P(A) = {B : B ⊆ A}</td>
+                        </tr>
+                        <tr>
+                            <td>(<sup>A</sup><sub>k</sub>)</td>
+                            <td>k element subsets</td>
+                            <td>(<sup>A</sup><sub>k</sub>) = {B : B ⊆ A, |B| = k}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <br>
+                
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Pattern</td>
+                            <td>N = {0, 1, 2, . . . }</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>{a, b, c, . . . , z}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>{1, 2, . . . , 9, 10}</td>
+                        </tr>
+                        <tr>
+                            <td>Rule</td>
+                            <td>{x ∈ N : x is even}</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>N</td>
+                            <td>Natural numbers</td>
+                        </tr>
+                        <tr>
+                            <td>R</td>
+                            <td>Real numbers</td>
+                        </tr>
+                        <tr>
+                            <td>Q</td>
+                            <td>Rationals</td>
+                        </tr>
+                        <tr>
+                            <td>Z</td>
+                            <td>Integers</td>
+                        </tr>
+                        <tr>
+                            <td>C</td>
+                            <td>Complex numbers</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="post">
+                <h1>First Order Logic</h1>
+                <table class="pure-table">
+                    <thead>
+                        <td></td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="post">
+                <h1>First Order Logic</h1>
+                <table class="pure-table">
+                    <thead>
+                        <td></td>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <!-- column 3-->
+        <div class="pure-u-1-24 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-1-5"> </div>
+    </div>
+</body>
+
+</html>
