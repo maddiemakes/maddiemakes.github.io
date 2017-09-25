@@ -36,52 +36,52 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>∧</td>
+                            <td><code>&and;</code></td>
                             <td>and</td>
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>∨</td>
+                            <td><code>&or;</code></td>
                             <td>or</td>
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>¬</td>
+                            <td><code>&not;</code></td>
                             <td>not</td>
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>⊃ / →</td>
+                            <td><code>&sup;</code> / <code>→</code></td>
                             <td>implication</td>
-                            <td>¬p ∨ q</td>
+                            <td><code>&not;p&or;q</code></td>
                         </tr>
                         <tr>
-                            <td>≡ / ↔</td>
+                            <td><code>&equiv;</code> / <code>↔</code></td>
                             <td>equivalence</td>
-                            <td>(p ∧ ¬q) ∨ (q ∧ ¬p)</td>
+                            <td><code>(p&and;&not;q)&or;(q&and;&not;p)</code></td>
                         </tr>
                         <tr>
-                            <td>⊕</td>
+                            <td><code>&oplus;</code></td>
                             <td>exclusive or (xor)</td>
-                            <td>(p ∧ ¬q) ∨ (q ∧ ¬p)</td>
+                            <td><code>(p&and;&not;q)&or;(q&and;&not;p)</code></td>
                         </tr>
                         <tr>
+                            <td><code>nand</code></td>
                             <td>nand</td>
-                            <td>nand</td>
-                            <td>¬(p∧q)</td>
+                            <td><code>¬(p&and;q)</code></td>
                         </tr>
                         <tr>
+                            <td><code>nor</code></td>
                             <td>nor</td>
-                            <td>nor</td>
-                            <td>¬(p ∨ q)</td>
+                            <td><code>¬(p&or;q)</code></td>
                         </tr>
                         <tr>
-                            <td>⊨</td>
+                            <td><code>&#x22A8;</code></td>
                             <td>satisfies/true</td>
                             <td>-</td>
                         </tr>
                         <tr>
-                            <td>⊭</td>
+                            <td><code>&#x22AD;</code></td>
                             <td>does not satisfy</td>
                             <td>-</td>
                         </tr>
@@ -125,15 +125,15 @@
                         </tr>
                         <tr>
                             <td>contrapositive</td>
-                            <td>¬q ⊃ ¬p is contrapositive of p ⊃ q</td>
+                            <td><code>¬q ⊃ ¬p</code> is contrapositive of <code>p ⊃ q</code></td>
                         </tr>
                         <tr>
                             <td>converse</td>
-                            <td>p ⊃ q is converse of q ⊃ p</td>
+                            <td><code>p ⊃ q</code> is converse of <code>q ⊃ p</code></td>
                         </tr>
                         <tr>
                             <td>inverse</td>
-                            <td>(p ⊃ q) is inverse of (¬p ⊃ ¬q)</td>
+                            <td><code>(p ⊃ q)</code> is inverse of <code>(¬p ⊃ ¬q)</code></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -154,47 +154,47 @@
                     <tbody>
                         <tr>
                             <td>deMorgan laws</td>
-                            <td>(p ∧ q) ≡ ¬(¬p ∨ ¬q)</td>
+                            <td><code>(p ∧ q) ≡ ¬(¬p ∨ ¬q)</code></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>(p ∨ q) ≡ ¬(¬p ∧ ¬q)</td>
+                            <td><code>(p ∨ q) ≡ ¬(¬p ∧ ¬q)</code></td>
                         </tr>
                         <tr>
                             <td>Commutativity</td>
-                            <td>(p ∨ q) ≡ (q ∨ p)</td>
+                            <td><code>(p ∨ q) ≡ (q ∨ p)</code></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>(p ∧ q) ≡ (q ∧ p)</td>
+                            <td><code>(p ∧ q) ≡ (q ∧ p)</code></td>
                         </tr>
                         <tr>
                             <td>Associativity</td>
-                            <td>(p ∨ (q ∨ r)) ≡ ((p ∨ q) ∨ r)</td>
+                            <td><code>(p ∨ (q ∨ r)) ≡ ((p ∨ q) ∨ r)</code></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>(p ∧ (q ∧ r)) ≡ (p ∧ (q ∧ r))</td>
+                            <td><code>(p ∧ (q ∧ r)) ≡ (p ∧ (q ∧ r))</code></td>
                         </tr>
                         <tr>
                             <td>Distributivity</td>
-                            <td>(p ∧ (q ∨ r)) ≡ ((p ∧ q) ∨ (p ∧ r))</td>
+                            <td><code>(p ∧ (q ∨ r)) ≡ ((p ∧ q) ∨ (p ∧ r))</code></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>(p ∨ (q ∧ r)) ≡ ((p ∨ q) ∧ (p ∨ r))</td>
+                            <td><code>(p ∨ (q ∧ r)) ≡ ((p ∨ q) ∧ (p ∨ r))</code></td>
                         </tr>
                         <tr>
                             <td>Idempotence</td>
-                            <td>(p ∧ p) ≡ p</td>
+                            <td><code>(p ∧ p) ≡ p</code></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>(p ∨ p) ≡ p</td>
+                            <td><code>(p ∨ p) ≡ p</code></td>
                         </tr>
                         <tr>
                             <td>Absorption</td>
-                            <td>(p ∧ (p ∨ q)) ≡ (p ∨ (p ∧ q)) ≡ p</td>
+                            <td><code>(p ∧ (p ∨ q)) ≡ (p ∨ (p ∧ q)) ≡ p</code></td>
                         </tr>
                     </tbody>
                 </table>
@@ -211,84 +211,84 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td>∅</td>
+                            <td><code>&empty;</code></td>
                             <td>empty set</td>
-                            <td>{}</td>
+                            <td><code>{}</code></td>
                         </tr>
                         <tr>
-                            <td>∈</td>
+                            <td><code>&isin;</code></td>
                             <td>membership</td>
-                            <td>a ∈ {a, b, c}</td>
+                            <td><code>a &isin; {a,b,c}</code></td>
                         </tr>
                         <tr>
-                            <td>&notin;</td>
+                            <td><code>&notin;</code></td>
                             <td>not a member</td>
-                            <td>a &notin; {b,c}</td>
+                            <td><code>a &notin; {b,c}</code></td>
                         </tr>
                         <tr>
-                            <td>⊆</td>
+                            <td><code>&sube;</code></td>
                             <td>subset</td>
-                            <td>A ⊆ B if all elements of A are elements of B</td>
+                            <td><code>A &sube; B</code> if all elements of <code>A</code> are elements of <code>B</code></td>
                         </tr>
                         <tr>
-                            <td>=</td>
+                            <td><code>=</code></td>
                             <td>equal to</td>
-                            <td>A = B if A ⊆ B and B ⊆ A</td>
+                            <td><code>A = B</code> if <code>A &sube; B</code> and <code>B &sube; A</code></td>
                         </tr>
                         <tr>
-                            <td>∪</td>
+                            <td><code>&cup;</code></td>
                             <td>union</td>
-                            <td>x ∈ A ∪ B iff x ∈ A or x ∈ B</td>
+                            <td><code>x &isin; A &cup; B</code> iff <code>x &isin; A</code> or <code>x &isin; B</code></td>
                         </tr>
                         <tr>
-                            <td>∩</td>
+                            <td><code>&cap;</code></td>
                             <td>intersect</td>
-                            <td>x ∈ A ∩ B iff x ∈ A and x ∈ B</td>
+                            <td><code>x &isin; A &cap; B</code> iff <code>x &isin; A</code> and <code>x &isin; B</code></td>
                         </tr>
                         <tr>
-                            <td>|A|</td>
+                            <td><code>|A|</code></td>
                             <td>cardinality</td>
-                            <td>the number of elements in the set A</td>
+                            <td>the number of elements in the set <code>A</code></td>
                         </tr>
                         <tr>
-                            <td>x ∈ &Amacr;</td>
+                            <td><code>x&isin;&Amacr;</code></td>
                             <td>complement</td>
-                            <td>x ∈ &Amacr; iff x ∈ U ∧ x &notin; A</td>
+                            <td><code>x &isin; &Amacr;</code> iff <code>x &isin; U &and; x &notin; A</code></td>
                         </tr>
                         <tr>
-                            <td>\</td>
+                            <td><code>\</code></td>
                             <td>difference</td>
-                            <td>x ∈ A \ B iff x ∈ A ∧ x &notin; B</td>
+                            <td><code>x &isin; A \ B</code> iff <code>x &isin; A &and; x &notin; B</code></td>
                         </tr>
                         <tr>
-                            <td>x∈A⊕B</td>
+                            <td><code>x&isin;A&oplus;B</code></td>
                             <td>symmetric difference</td>
-                            <td>x ∈ A ⊕ B iff x ∈ ((A \ B) ∪ (B \ A))</td>
+                            <td><code>x&isin;A&oplus;B</code> iff <code>x &isin; ((A\B) &cup; (B\A))</code></td>
                         </tr>
                         <tr>
-                            <td>&#x228E;</td>
+                            <td><code>&#x228E;</code></td>
                             <td>disjoint union</td>
-                            <td>A&#x228E;B is an error if A∩B is not empty</td>
+                            <td><code>A&#x228E;B</code> is an error if <code>A&cap;B</code> is not empty</td>
                         </tr>
                         <tr>
                             <td></td>
                             <td></td>
-                            <td>A&#x228E;B is A∪B if A∩B is empty</td>
+                            <td><code>A&#x228E;B</code> is <code>A&cup;B</code> if <code>A&cap;B</code> is empty</td>
                         </tr>
                         <tr>
-                            <td>×</td>
+                            <td><code>×</code></td>
                             <td>Cartesian product</td>
-                            <td>A × B is {(a, b)|a ∈ A, b ∈ B}</td>
+                            <td><code>A × B</code> is <code>{(a,b)|a ∈ A, b ∈ B}</code></td>
                         </tr>
                         <tr>
-                            <td>P</td>
+                            <td><code>P</code></td>
                             <td>Power set</td>
-                            <td>P(A) = {B : B ⊆ A}</td>
+                            <td><code>P(A) = {B : B ⊆ A}</code></td>
                         </tr>
                         <tr>
-                            <td>(<sup>A</sup><sub>k</sub>)</td>
-                            <td>k element subsets</td>
-                            <td>(<sup>A</sup><sub>k</sub>) = {B : B ⊆ A, |B| = k}</td>
+                            <td><code>(<sup>A</sup><sub>k</sub>)</code></td>
+                            <td><code>k</code> element subsets</td>
+                            <td><code>(<sup>A</sup><sub>k</sub>) = {B : B ⊆ A, |B| = k}</code></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -308,26 +308,26 @@
                 <table class="pure-table">
                     <thead>
                         <tr>
-                            <td></td>
-                            <td></td>
+                            <td>Term</td>
+                            <td>Meaning</td>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <td>Pattern</td>
-                            <td>N = {0, 1, 2, . . . }</td>
+                            <td><code>N = {0,1,2,...}</code></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>{a, b, c, . . . , z}</td>
+                            <td><code>{a,b,c,...,z}</code></td>
                         </tr>
                         <tr>
                             <td></td>
-                            <td>{1, 2, . . . , 9, 10}</td>
+                            <td><code>{1,2,...,9,10}</code></td>
                         </tr>
                         <tr>
                             <td>Rule</td>
-                            <td>{x ∈ N : x is even}</td>
+                            <td><code>{x &isin; N : x is even}</code></td>
                         </tr>
                         <tr>
                             <td></td>
@@ -338,23 +338,23 @@
                             <td></td>
                         </tr>
                         <tr>
-                            <td>N</td>
+                            <td><code>N</code></td>
                             <td>Natural numbers</td>
                         </tr>
                         <tr>
-                            <td>R</td>
+                            <td><code>R</code></td>
                             <td>Real numbers</td>
                         </tr>
                         <tr>
-                            <td>Q</td>
+                            <td><code>Q</code></td>
                             <td>Rationals</td>
                         </tr>
                         <tr>
-                            <td>Z</td>
+                            <td><code>Z</code></td>
                             <td>Integers</td>
                         </tr>
                         <tr>
-                            <td>C</td>
+                            <td><code>C</code></td>
                             <td>Complex numbers</td>
                         </tr>
                     </tbody>
@@ -363,12 +363,70 @@
             
             <div class="post">
                 <h1>First Order Logic</h1>
+                <p>Predicates can have variables as arguments. Predicate <code>P</code> has argument <code>x</code> in <code>P(x)</code>.</p>
                 <table class="pure-table">
                     <thead>
-                        <td></td>
+                        <tr>
+                            <td>Quantifier</td>
+                            <td>Meaning</td>
+                        </tr>
                     </thead>
                     <tbody>
                         <tr>
+                            <td><code>&forall;x</code></td>
+                            <td>for all <code>x</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&exist;x</code></td>
+                            <td>there exists an <code>x</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&#x2204;x</code></td>
+                            <td>there does not exist an <code>x</code></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <br>
+                
+                <table class="pure-table">
+                    <thead>
+                        <tr>
+                           <td></td>
+                           <td></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>P(x)</code></td>
+                            <td>It is raining on day <code>x</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>Q(x)</code></td>
+                            <td>The sun does not shine on day <code>x</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>P(x)→Q(x)</code></td>
+                            <td>If it is raining on day <code>x</code> then the sun does not shine on day <code>x</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&forall;x(P(x)→Q(x))</code></td>
+                            <td>For all <code>x</code> if it is raining on day <code>x</code> then the sun does not shine on day <code>x</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>P(x)&and;Q(x)</code></td>
+                            <td>It is raining on day <code>x</code> and the sun is not shining on day <code>x</code></td>
+                        </tr>
+                        <tr>
+                            <td><code>&exist;x(P(x)&and;Q(x))</code></td>
+                            <td>There is a day on which it is raining on day <code>x</code> and the sun does not shine on day <code>x</code></td>
+                        </tr>
+                        <tr>
+                            <td></td>
                             <td></td>
                         </tr>
                     </tbody>
