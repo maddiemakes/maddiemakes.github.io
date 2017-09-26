@@ -333,6 +333,13 @@
             </div>
             
             <div class="post">
+                <h1>Tuples</h1>
+                <p>A tuple is a finite ordered list of elements.</p>
+                <p>A <b>k-tuple</b> is an ordered sequence <code>(a<sub>1</sub>, a<sub>2</sub>,...,a<sub>k</sub>)</code> of k elements. The order matters and repitition matters so that <code>(1,2,3)</code> is not the same tuple as <code>(3,2,1)</code>.</p>
+                <p>Ordered pairs are 2-tuples and ordered triples are 3-tuples.</p>
+            </div>
+            
+            <div class="post">
                 <h1>First Order Logic</h1>
                 <p>Predicates can have variables as arguments. Predicate <code>P</code> has argument <code>x</code> in <code>P(x)</code>.</p>
                 
@@ -395,21 +402,26 @@
                         </tr>
                     </tbody>
                 </table>
+                
+                <h3>Semantics</h3>
+                <p>An <b>interpretation</b> of a first-order formula has the following parts:</p>
+                <ul>
+                    <li><b>Quantification domain</b> which gives the values that can be assigned to the variables</li>
+                    <li>An assignment of a meaning to each predicate, function, and constant symbol:
+                        <ul>
+                            <li>If <code>I</code> is an interpretation, then <code>P<sup>I</sup> </code> is the meaning of predicate <code>P</code> in <code>I</code>. This assigns a value of true or false to each combination of arguments as elements of the domain.</li>
+                            <li>If <code>f</code> is a function symbol, then <code>f<sup>I</sup></code> is the meaning of the function <code>f</code> in <code>I</code>. This assigns an element of the domain to each combination of the arguments as elements of the domain.</li>
+                        </ul>
+                    </li>
+                </ul>
+                <p><b>Validity:</b> Hello.</p>
+                <ul>
+                    <li>A formula is <b>valid</b> if it is satsified by all interpretations</li>
+                    <li>A formula is <b>satisfiable</b> if it is satisfied by at least one interpretation</li>
+                    <li>Two formulas are <b>equivalent</b> if they are satisfied by the same interpretations, or <b>worlds</b></li>
+                </ul>
             </div>
             
-            <div class="post">
-                <h1>First Order Logic</h1>
-                <table class="pure-table">
-                    <thead>
-                        <td></td>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
         </div>
         <!-- column 3-->
         <div class="pure-u-1-24 pure-u-sm-2-24 pure-u-md-4-24 pure-u-lg-1-5"> </div>
