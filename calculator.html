@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Only the purest - Pure CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/pure-min.css" integrity="sha384-UQiGfs9ICog+LwheBSRCt1o5cbyKIHbwjWscjemyBMT9YCUMZffs6UqUTd0hObXD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@0.6.2/build/grids-responsive-min.css">
+    <!-- Pretty fly for a white guy - Main CSS -->
+    <link href="css/calculator.css" rel="stylesheet" type="text/css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid-item" onclick="clearResult()" id="result"></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>7</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>8</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>9</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>/</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>4</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>5</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>6</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>*</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>1</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>2</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>3</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>-</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>0</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>.</p></div>
+        <div class="grid-item" onclick="calculate()"><p>=</p></div>
+        <div class="grid-item" onclick="buttonClick(this)"><p>+</p></div>
+    </div>
+</body>
+    <script type="text/javascript" src="js/calculator.js"></script>
+</html>
