@@ -15,7 +15,23 @@
 </head>
 
 <body>
-    <iframe src="/resume.pdf" style="position: absolute; width: 100%; height: 100%; border: none"></iframe>
+    <div id="adobe-dc-view" style="position: absolute; height: 100%; width: 100%;"></div>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("adobe_dc_view_sdk.ready", function(){
+        var adobeDCView = new AdobeDC.View({clientId: "46adfc11c626406893940508f51ce415", divId: "adobe-dc-view"});
+        adobeDCView.previewFile({
+        content:{ location:
+            { url: "resume.pdf"}},
+        metaData:{fileName: "Bodea Brochure.pdf"}
+        },
+        {
+        embedMode: "FULL_WINDOW"
+        });
+    });
+    </script>
+
+    <!-- <iframe src="/resume.pdf" style="position: absolute; width: 100%; height: 100%; border: none"></iframe> -->
 </body>
 
 </html>
