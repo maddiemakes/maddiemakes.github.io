@@ -52,7 +52,7 @@ body {
 }
 
 .custom-wrapper.open {
-    height: 14.5em;
+    height: 18em;
 }
 
 .custom-wrapper.open #navTitle {
@@ -180,4 +180,5 @@ body {
         opacity: 0;
     }
     
+
 }
